@@ -28,5 +28,11 @@ How to use it
 3. Alter the options object in presentMain.js javascript file to control slide timings
 4. Please use the source code to know in details. 
 
+Demo
+------
+
+Visit http://varunon9.me/presentMe.js
+
+
 That's all!!
 
