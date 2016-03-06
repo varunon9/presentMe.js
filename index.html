@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>presentMe.js</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/main.css">
+        <body>
+            <!--
+                Welcome!!
+                Excited and want to use presentMe.js?? or just landed here due to mistake or boredom?
+                Anyway lets proceed
+                1. body is divided into 4 parts
+                    <div id="backgroundDiv"></div>
+                    <div id="control"></div>
+                    <div id="main"></div>
+                    <div id="indicator"></div>
+                2. 
+                    * backgroundDiv controls the background of presentation
+                    * control contains leftButton, rightButton as well as pause indicator (only when 
+                        automaticExecution is enabled )
+                    * main contains all the slides
+                    * indicator shows the progress of slides
+                3. To include a slide use class="frame" inside id="main"
+                4. More details are available below. 
+            -->
+            <!--
+                Do not modify
+                you can customize bg-color
+            -->
+            <div id="backgroundDiv" data-bgColor="#333">
+            </div>
+            <!--
+                Do not modify
+            -->
+            <div id="control">
+                <div id="leftControl"></div>
+                <div id="rightControl"></div>
+                <div id="pause">
+                    ||
+                </div>
+            </div>
+            <!--
+                do not change id="main"
+            -->
+            <div id="main">
+                <!--
+                    Use class="frame" in div to include a new slide in your presentation
+                    You can customize all data-attributes
+                    These slides can be given an id and can be styled in your css file
+                -->
+                <!--
+                    List of various data-from and data-to attributes is :-
+                        * left, right, down, up
+                        * leftUp, leftDown, rightUp, rightDown
+                        * above, beneath,
+                        * zoomOut, zoomIn,
+                        * rotateLeft, rotateRight, rotateUp, rotateDown
+                    data-styleIn and data-styleOut attributes are optional which can have zoomOut or 
+                    normal value. Default value is normal.
+                    Note that data-styleIn and data-styleOut attributes having value zoomOut will work 
+                    only in case of 
+                        * left, right, down, up
+                        * leftUp, leftDown, rightUp, rightDown
+                -->
+                <div class="frame" data-from="rotateLeft" data-to="rotateRight">
+                    <h1>presentMe.js</h1>
+                    <h2>
+                        Web-based presentation plugin combining the power of GSAP, jQuery, CSS3 and HTML5
+                    </h2>
+                    <h3>inspired from</h3>
+                    <h4>
+                        reveal.js 
+                        <a href="https://github.com/hakimel/reveal.js/" target="_blank">
+                            (https://github.com/hakimel/reveal.js/)
+                        </a>
+                    </h4>
+                    <p>and</p>
+                    <h4>
+                        impress.js
+                        <a href="https://github.com/impress/impress.js/" target="_blank">
+                            (https://github.com/impress/impress.js/)
+                        </a>
+                    </h4>
+                </div>
+                <div class="frame" data-from="rotateRight" data-to="rotateUp">
+                    <h1>DEPENDENCIES</h1>
+                    <a href="http://greensock.com/gsap" target="_blank">
+                        <h2>GSAP (http://greensock.com/gsap)</h2>
+                    </a>
+                    <a href="http://jquery.com" target="_blank">
+                        <h2>jQuery (http://jquery.com)</h2>
+                    </a>
+                    <p>
+                        presentMe.js uses GSAP and jQuery as dependencies. 
+                    </p>
+                </div>
+                <div class="frame" data-from="rotateUp" data-to="rightDown" data-styleOut="zoomOut">
+                    <h1>FEATURES</h1>
+                    <ol>
+                        <li>Simple and easy to use</li>
+                        <li>Works on both laptop as well as mobile</li>
+                        <li>Slide indicator and control are available </li>
+                        <li>User can customize all the CSS to meet his requirements</li>
+                        <li>Automatic execution of slides is available</li>
+                    </ol>
+                </div>
+                <div class="frame" data-from="leftUp" data-to="zoomOut" data-styleIn="zoomOut">
+                    <h1>How to use?</h1>
+                    <p>
+                        All the contents of 'class frame' form a slide.
+                        'frame class' must be used inside 'id main'. 
+                    </p>
+                    <p>
+                        presentMe.js uses HTML5 'data attributes' to control slide animation
+                    </p>
+                    <p>
+                        Alter the options object in presentMain.js javascript file to control slide timings
+                    </p>
+                    <p>
+                        Please use the source code to know in details.
+                    </p>
+                </div>
+                <div class="frame" data-from="zoomOut" data-to="right" data-styleOut="zoomOut">
+                    <h1>Issues and Feedback</h1>
+                    <p>
+                        Please use github 
+                        <a href="https://github.com/varunon9/presentMe" target="_blank">
+                            (github.com/varunon9/presentMe.js)
+                        </a> 
+                        to submit any issue
+                    </p>
+                    <p>For feedback or suggestions, contact me :- varunon9@gmail.com</p>
+                </div>
+                <div class="frame" data-from="left" data-to="leftDown" data-styleIn="zoomOut">
+                    <h1>THANKS</h1>
+                    <h3>
+                        That's all. Thanks for reading this. :D
+                    </h3>
+                </div>
+            </div>
+            <!--
+                Indicator at the bottom of page to indicate progress of presentation
+                Do not modify
+            -->
+            <div id="indicator">
+            </div>
+            <!--
+                Any question till now?
+                You might be thinking about incoming/outgoing speed of slides or wondering about 
+                automatic execution of slides
+                Well yes! You can control slde-speed (default is 1s) or choose auto slide-show (in 
+                    this case you will have to provide slide-duration (default is 4s) )
+
+                Head to presentMe.js javascript file
+                An options object is there for customization in starting
+                To change speed of slides, alter inOutDuration variable (value in milli-second)
+                To choose auto slide-show, set automaticExecution to true and alter duration variable
+            -->
+            <!--
+                Are you still reading?
+                * You can use your own stylesheet or use main.css (included in this file) to get started
+                * Do not forget to include dependencies i.e. TweenMax.js and jQuery
+                * Include presentMe.js in last (see below scripts)
+            -->
+            <script src="js/TweenMax.js"></script>
+            <script src="js/jquery.js"></script>
+            <script src="js/presentMe.js"></script>
+            <!--
+                Thanks for reading this or reading only the last part :p
+                got any question/feedback/suggestion/criticsm ?
+                contact me or correct me :- varunon9@gmail.com
+                Github: https://github.com/varunon9
+            -->
+        </body>
+    </head>
+</html>

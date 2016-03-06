@@ -1,0 +1,61 @@
+/**
+    * presentMe.js
+    * version 1.0
+    * Description: Web-based presentation plugin combining the power of GSAP, jQuery, CSS3 and HTML5
+    * Dependencies: Greensock(Gsap), jQuery, HTML5
+    * Author: Varun Kumar
+    *     B.Tech., Information Technology, NIT Kurukshetra (2013-2017)
+    * Contact: varunon9@gmail.com
+    * Github: https://github.com/varunon9
+    * Feedbacks are welcomed
+    * inspired from reveal.js(https://github.com/hakimel/reveal.js/) and
+         impress.js(https://github.com/impress/impress.js/)
+    *
+    * This stylesheet is optional
+    * Use this stylesheet to get things started
+    * You can always override css rules to suit your requirements
+**/
+@font-face {
+	font-family: openSans;
+	src: url('OpenSans-Regular.ttf');
+}
+@font-face {
+	font-family: roboto;
+	src: url('Roboto-Light.ttf');
+}
+body {
+	font-size: 1.2em;
+	font-family: roboto;
+	color: #EEE;
+	line-height: 1.48em;
+	letter-spacing: 1px;
+	text-align: center;
+}
+body h1 {
+	color: #EEE;
+	font-family: openSans;
+	font-size: 2.2em;
+	text-shadow: 1px 1px 10px #333;
+}
+body a {
+	color: #EEE;
+	text-decoration: none;
+}
+@media only screen and (max-width: 700px) {
+    body {
+    	font-size: 1em;
+    }
+    body h1 {
+    	text-shadow: none;
+    }
+}
+@media only screen and (max-width: 500px) {
+    body {
+    	font-size: .8em;
+    }
+}
+@media only screen and (max-width: 320px) {
+    body {
+    	font-size: .6em;
+    }
+}
