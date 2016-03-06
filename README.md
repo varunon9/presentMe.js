@@ -23,7 +23,7 @@ FEATURES
 How to use it
 --------------
  
-1.All the contents of 'class frame' form a slide. 'frame class' must be used inside 'id main'.
+1. All the contents of 'class frame' form a slide. 'frame class' must be used inside 'id main'.
 2. presentMe.js uses HTML5 'data attributes' to control slide animation
 3. Alter the options object in presentMain.js javascript file to control slide timings
 4. Please use the source code to know in details. 
