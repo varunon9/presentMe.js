@@ -31,7 +31,7 @@ How to use it
 Demo
 ------
 
-Visit http://varunon9.me/presentMe.js
+Visit http://alley.co.in/presentMe.js/
 
 
 That's all!!
